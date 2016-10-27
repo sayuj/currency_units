@@ -1,5 +1,5 @@
 class Ethereum
-  def initialize(value, unit)
+  def initialize(value, unit = nil)
     @value = value
     @unit = unit
     @wei = convert_to_wei if @unit

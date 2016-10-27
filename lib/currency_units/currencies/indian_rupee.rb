@@ -1,5 +1,5 @@
 class IndianRupee
-  def initialize(value, unit)
+  def initialize(value, unit = nil)
     @value = value
     @unit = unit
     @paise = convert_to_paise if @unit
