@@ -12,6 +12,10 @@ class Numeric
     Bitcoin.new(self, :sat)
   end
 
+  def bitcoin
+    Bitcoin.new(self)
+  end
+
   # Indian Rupee units
   def inr
     IndianRupee.new(self, :inr)
@@ -21,6 +25,10 @@ class Numeric
     IndianRupee.new(self, :paise)
   end
 
+  def indian_rupee
+    IndianRupee.new(self)
+  end
+
   # Ethereum units
   def eth
     Ethereum.new(self, :eth)
@@ -28,5 +36,9 @@ class Numeric
 
   def wei
     Ethereum.new(self, :wei)
+  end
+
+  def ethereum
+    Ethereum.new(self)
   end
 end

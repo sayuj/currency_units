@@ -2,7 +2,7 @@ class Ethereum
   def initialize(value, unit)
     @value = value
     @unit = unit
-    @wei = convert_to_wei
+    @wei = convert_to_wei if @unit
   end
 
   def convert_to_wei
@@ -35,5 +35,17 @@ class Ethereum
 
   def to_smallest
     to_wei
+  end
+
+  def smallest_to_coin
+    @unit ||= :wei
+    @wei = @value
+    to_coin
+  end
+
+  def coin_to_smallest
+    @unit ||= :eth
+    @wei = convert_to_wei
+    to_smallest
   end
 end

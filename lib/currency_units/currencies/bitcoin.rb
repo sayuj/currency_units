@@ -1,8 +1,8 @@
 class Bitcoin
-  def initialize(value, unit)
+  def initialize(value, unit = nil)
     @value = value
     @unit = unit
-    @satoshi = convert_to_satoshi
+    @satoshi = convert_to_satoshi if @unit
   end
 
   def convert_to_satoshi
@@ -33,5 +33,17 @@ class Bitcoin
 
   def to_smallest
     to_satoshi
+  end
+
+  def smallest_to_coin
+    @unit ||= :sat
+    @satoshi = @value
+    to_coin
+  end
+
+  def coin_to_smallest
+    @unit ||= :btc
+    @satoshi = convert_to_satoshi
+    to_smallest
   end
 end
