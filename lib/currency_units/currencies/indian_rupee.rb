@@ -36,7 +36,7 @@ class IndianRupee
   end
 
   def coin_to_smallest
-    @unit ||= :btc
+    @unit ||= :inr
     @paise = convert_to_paise
     to_smallest
   end
