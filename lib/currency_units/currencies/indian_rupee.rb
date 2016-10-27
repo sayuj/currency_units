@@ -21,7 +21,7 @@ class IndianRupee
   end
 
   def to_inr
-    @paise / 100
+    @paise / 100.0
   end
   alias :to_coin :to_inr
 

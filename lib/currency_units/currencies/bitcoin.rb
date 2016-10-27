@@ -19,11 +19,11 @@ class Bitcoin
   end
 
   def to_bit
-    @satoshi / 100
+    @satoshi / 100.0
   end
 
   def to_btc
-    @satoshi / 100000000
+    @satoshi / 100000000.0
   end
   alias :to_coin :to_btc
 

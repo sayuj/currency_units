@@ -29,7 +29,7 @@ class Ethereum
   end
 
   def to_eth
-    @wei / 1000000000000000000
+    @wei / 1000000000000000000.0
   end
   alias :to_coin :to_eth
 
