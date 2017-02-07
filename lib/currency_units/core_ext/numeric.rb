@@ -41,4 +41,17 @@ class Numeric
   def ethereum
     Ethereum.new(self)
   end
+
+  # Litecoin units
+  def ltc
+    Litecoin.new(self, :ltc)
+  end
+
+  def litoshi
+    Litecoin.new(self, :lit)
+  end
+
+  def litecoin
+    Litecoin.new(self)
+  end
 end

@@ -19,4 +19,10 @@ describe Numeric do
     expect(1.paise).to be_instance_of IndianRupee
     expect(1.indian_rupee).to be_instance_of IndianRupee
   end
+
+  it 'responds to litecoin methods' do
+    expect(1.ltc).to be_instance_of Litecoin
+    expect(1.litoshi).to be_instance_of Litecoin
+    expect(1.litecoin).to be_instance_of Litecoin
+  end
 end
