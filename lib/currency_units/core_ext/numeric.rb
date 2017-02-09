@@ -55,7 +55,7 @@ class Numeric
     Litecoin.new(self)
   end
 
-  #Ripple units
+  # Ripple units
   def xrp
     Ripple.new(self, :xrp)
   end
@@ -67,5 +67,4 @@ class Numeric
   def ripple
     Ripple.new(self)
   end
-
 end
