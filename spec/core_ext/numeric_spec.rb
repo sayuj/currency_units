@@ -25,4 +25,9 @@ describe Numeric do
     expect(1.litoshi).to be_instance_of Litecoin
     expect(1.litecoin).to be_instance_of Litecoin
   end
+  it 'responds to ripple methods' do
+    expect(1.xrp).to be_instance_of Ripple
+    expect(1.drop).to be_instance_of Ripple
+    expect(1.ripple).to be_instance_of Ripple
+  end
 end

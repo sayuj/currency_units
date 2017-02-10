@@ -54,4 +54,17 @@ class Numeric
   def litecoin
     Litecoin.new(self)
   end
+
+  # Ripple units
+  def xrp
+    Ripple.new(self, :xrp)
+  end
+
+  def drop
+    Ripple.new(self, :drop)
+  end
+
+  def ripple
+    Ripple.new(self)
+  end
 end
