@@ -67,4 +67,13 @@ class Numeric
   def ripple
     Ripple.new(self)
   end
+
+  # Bitcoin Cash units
+  def bch
+    BitcoinCash.new(self, :bch)
+  end
+
+  def bitcoin_cash
+    BitcoinCash.new(self)
+  end
 end
