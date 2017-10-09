@@ -1,6 +1,8 @@
+require 'bigdecimal/util'
+
 class IndianRupee
   def initialize(value, unit = nil)
-    @value = value
+    @value = value.to_d
     @unit = unit
     @paise = convert_to_paise if @unit
   end
