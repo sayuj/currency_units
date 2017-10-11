@@ -1,6 +1,6 @@
 class Ethereum
   def initialize(value, unit = nil)
-    @value = value
+    @value = value.to_d
     @unit = unit
     @wei = convert_to_wei if @unit
   end

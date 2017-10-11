@@ -1,6 +1,6 @@
 class Bitcoin
   def initialize(value, unit = nil)
-    @value = value
+    @value = value.to_d
     @unit = unit
     @satoshi = convert_to_satoshi if @unit
   end
