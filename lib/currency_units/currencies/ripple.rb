@@ -1,7 +1,7 @@
 # Ripple
 class Ripple
   def initialize(value, unit = nil)
-    @value = value
+    @value = value.to_d
     @unit = unit
     @drop = convert_to_drop if @unit
   end
