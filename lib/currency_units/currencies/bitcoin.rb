@@ -1,3 +1,5 @@
+require 'bigdecimal/util'
+
 class Bitcoin
   def initialize(value, unit = nil)
     @value = value.to_d

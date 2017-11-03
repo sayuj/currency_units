@@ -1,4 +1,6 @@
 # Ripple
+require 'bigdecimal/util'
+
 class Ripple
   def initialize(value, unit = nil)
     @value = value.to_d
