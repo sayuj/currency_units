@@ -76,4 +76,12 @@ class Numeric
   def bitcoin_cash
     BitcoinCash.new(self)
   end
+
+  def dash
+    Dash.new(self)
+  end
+
+  def duff
+    Dash.new(self, :duff)
+  end
 end

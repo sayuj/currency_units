@@ -36,4 +36,9 @@ describe Numeric do
     expect(1.bch).to be_instance_of BitcoinCash
     expect(1.bitcoin_cash).to be_instance_of BitcoinCash
   end
+
+  it 'responds to dash cash methods' do
+    expect(1.dash).to be_instance_of Dash
+    expect(1.duff).to be_instance_of Dash
+  end
 end
