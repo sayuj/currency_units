@@ -78,7 +78,7 @@ class Numeric
   end
 
   def dash
-    Dash.new(self)
+    Dash.new(self, :dash)
   end
 
   def duff
