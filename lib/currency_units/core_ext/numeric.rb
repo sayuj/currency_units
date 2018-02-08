@@ -84,4 +84,13 @@ class Numeric
   def duff
     Dash.new(self, :duff)
   end
+
+  # Digibyte units
+  def digibyte
+    Digibyte.new(self, :digibyte)
+  end
+
+  def dgb
+    Digibyte.new(self, :dgb)
+  end
 end
