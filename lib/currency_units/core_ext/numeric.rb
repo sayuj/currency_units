@@ -87,7 +87,7 @@ class Numeric
 
   # Digibyte units
   def digibyte
-    Digibyte.new(self, :digibyte)
+    Digibyte.new(self)
   end
 
   def dgb
