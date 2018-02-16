@@ -45,5 +45,21 @@ describe Numeric do
   it 'responds to digibyte methods' do
     expect(1.digibyte).to be_instance_of Digibyte
     expect(1.dgb).to be_instance_of Digibyte
+    expect(1.dgb).to be_instance_of Digibyte
+  end
+
+  it 'responds to zcash methods' do
+    expect(1.zcash).to be_instance_of Zcash
+    expect(1.zat).to be_instance_of Zcash
+  end
+
+  it 'responds to monero methods' do
+    expect(1.xmr).to be_instance_of Monero
+    expect(1.bit_xmr).to be_instance_of Monero
+  end
+
+  it 'responds to bitcoingold methods' do
+    expect(1.btg).to be_instance_of BitcoinGold
+    expect(1.bitcoin_gold).to be_instance_of BitcoinGold
   end
 end

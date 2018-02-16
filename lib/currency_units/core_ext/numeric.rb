@@ -93,4 +93,40 @@ class Numeric
   def dgb
     Digibyte.new(self, :dgb)
   end
+
+  #Zcash
+  def zcash
+    Zcash.new(self)
+  end
+
+  def zec
+    Zcash.new(self, :zec)
+  end
+
+  def zat
+    Zcash.new(self, :zat)
+  end 
+
+  #Monero
+  def monero
+    Monero.new(self)
+  end
+
+  def xmr
+    Monero.new(self, :xmr)
+  end
+
+  def bit_xmr
+    Monero.new(self, :bit_xmr)
+  end 
+
+ #BitcoinGold
+  def btg
+    BitcoinGold.new(self, :btg)
+  end
+
+  def bitcoin_gold
+    BitcoinGold.new(self)
+  end 
+
 end
