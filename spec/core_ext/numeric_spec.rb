@@ -62,4 +62,8 @@ describe Numeric do
     expect(1.btg).to be_instance_of BitcoinGold
     expect(1.bitcoin_gold).to be_instance_of BitcoinGold
   end
+
+  it 'responds to qtum methods' do
+    expect(1.qtum).to be_instance_of Qtum
+  end
 end

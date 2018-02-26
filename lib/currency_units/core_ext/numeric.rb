@@ -105,7 +105,7 @@ class Numeric
 
   def zat
     Zcash.new(self, :zat)
-  end 
+  end
 
   #Monero
   def monero
@@ -118,15 +118,18 @@ class Numeric
 
   def bit_xmr
     Monero.new(self, :bit_xmr)
-  end 
+  end
 
- #BitcoinGold
+  #BitcoinGold
   def btg
     BitcoinGold.new(self, :btg)
   end
 
   def bitcoin_gold
     BitcoinGold.new(self)
-  end 
+  end
 
+  def qtum
+    Qtum.new(self)
+  end
 end
