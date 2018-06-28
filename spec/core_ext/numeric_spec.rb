@@ -66,4 +66,8 @@ describe Numeric do
   it 'responds to qtum methods' do
     expect(1.qtum).to be_instance_of Qtum
   end
+
+  it 'responds to BAT methods' do
+    expect(1.bat).to be_instance_of BasicAttentionToken
+  end
 end

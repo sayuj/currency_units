@@ -132,4 +132,12 @@ class Numeric
   def qtum
     Qtum.new(self)
   end
+
+  def bat
+    BasicAttentionToken.new(self, :bat)
+  end
+
+  def bit_bat
+    BasicAttentionToken.new(self, :bit_bat)
+  end
 end
