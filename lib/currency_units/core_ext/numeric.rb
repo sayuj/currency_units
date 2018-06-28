@@ -140,4 +140,8 @@ class Numeric
   def bit_bat
     BasicAttentionToken.new(self, :bit_bat)
   end
+
+  def basic_attention_token
+    BasicAttentionToken.new(self, :bat)
+  end
 end

@@ -69,5 +69,6 @@ describe Numeric do
 
   it 'responds to BAT methods' do
     expect(1.bat).to be_instance_of BasicAttentionToken
+    expect(1.basic_attention_token).to be_instance_of BasicAttentionToken
   end
 end
