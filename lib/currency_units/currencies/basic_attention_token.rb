@@ -10,7 +10,7 @@ class BasicAttentionToken
   def convert_to_bit_bat
     case @unit
       when :bat
-        @value * 100000000000000000
+        @value * (10 ** 18)
       when :bit_bat
         @value
       else
@@ -19,7 +19,7 @@ class BasicAttentionToken
   end
 
   def to_bat
-    @bit_bat / 10000000000000000.0
+    @bit_bat / (10.0 ** 18)
   end
   alias to_coin to_bat
 
