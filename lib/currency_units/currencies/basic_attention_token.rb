@@ -19,7 +19,7 @@ class BasicAttentionToken
   end
 
   def to_bat
-    @bit_bat / 100000000000000000.0
+    @bit_bat / 10000000000000000.0
   end
   alias to_coin to_bat
 
