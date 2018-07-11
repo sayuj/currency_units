@@ -144,4 +144,12 @@ class Numeric
   def basic_attention_token
     BasicAttentionToken.new(self, :bat)
   end
+
+  def dai
+    Dai.new(self, :dai)
+  end
+
+  def bit_dai
+    Dai.new(self, :bit_dai)
+  end
 end

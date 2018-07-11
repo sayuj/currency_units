@@ -71,4 +71,9 @@ describe Numeric do
     expect(1.bat).to be_instance_of BasicAttentionToken
     expect(1.basic_attention_token).to be_instance_of BasicAttentionToken
   end
+
+  it 'responds to DAI methods' do
+    expect(1.dai).to be_instance_of Dai
+    expect(1.bit_dai).to be_instance_of Dai
+  end
 end
