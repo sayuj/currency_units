@@ -137,11 +137,19 @@ class Numeric
     BasicAttentionToken.new(self, :bat)
   end
 
-  def bit_bat
+  def wei_bat
     BasicAttentionToken.new(self, :bit_bat)
   end
 
   def basic_attention_token
     BasicAttentionToken.new(self, :bat)
+  end
+
+  def dai
+    Dai.new(self, :dai)
+  end
+
+  def wei_dai
+    Dai.new(self, :wei_dai)
   end
 end
