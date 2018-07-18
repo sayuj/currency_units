@@ -77,4 +77,9 @@ describe Numeric do
     expect(1.dai).to be_instance_of Dai
     expect(1.wei_dai).to be_instance_of Dai
   end
+
+  it 'responds to Waves methods' do
+    expect(1.waves).to be_instance_of Waves
+    expect(1.waves_drop).to be_instance_of Waves
+  end
 end
