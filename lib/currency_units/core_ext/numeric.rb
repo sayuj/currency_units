@@ -160,4 +160,17 @@ class Numeric
   def waves_drop
     Waves.new(self, :drop)
   end
+
+  def true_usd
+    TrueUsd.new(self, :tusd)
+  end
+
+  def tusd
+    TrueUsd.new(self, :tusd)
+  end
+
+  def wei_tusd
+    TrueUsd.new(self, :wei_tusd)
+  end
 end
+

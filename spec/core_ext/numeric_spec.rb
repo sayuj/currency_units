@@ -82,4 +82,10 @@ describe Numeric do
     expect(1.waves).to be_instance_of Waves
     expect(1.waves_drop).to be_instance_of Waves
   end
+
+  it 'responds to TrueUsd methods' do
+    expect(1.tusd).to be_instance_of TrueUsd
+    expect(1.true_usd).to be_instance_of TrueUsd
+    expect(1.wei_tusd).to be_instance_of TrueUsd
+  end
 end
