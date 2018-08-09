@@ -13,3 +13,5 @@ require_relative 'currencies/qtum'
 require_relative 'currencies/basic_attention_token'
 require_relative 'currencies/dai'
 require_relative 'currencies/waves'
+require_relative 'currencies/true_usd'
+
