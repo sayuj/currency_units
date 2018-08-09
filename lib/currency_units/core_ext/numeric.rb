@@ -152,4 +152,12 @@ class Numeric
   def wei_dai
     Dai.new(self, :wei_dai)
   end
+
+  def waves
+    Waves.new(self, :waves)
+  end
+
+  def waves_drop
+    Waves.new(self, :drop)
+  end
 end
