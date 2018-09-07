@@ -88,4 +88,9 @@ describe Numeric do
     expect(1.true_usd).to be_instance_of TrueUsd
     expect(1.wei_tusd).to be_instance_of TrueUsd
   end
+
+  it 'responds to Usdt methods' do
+    expect(1.usdt).to be_instance_of Usdt
+    expect(1.satoshi_usdt).to be_instance_of Usdt
+  end
 end

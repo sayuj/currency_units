@@ -172,5 +172,13 @@ class Numeric
   def wei_tusd
     TrueUsd.new(self, :wei_tusd)
   end
-end
 
+  # Usdt
+  def usdt
+    Usdt.new(self, :usdt)
+  end
+
+  def satoshi_usdt
+    Usdt.new(self, :sat)
+  end
+end
