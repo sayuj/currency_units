@@ -93,4 +93,9 @@ describe Numeric do
     expect(1.usdt).to be_instance_of Usdt
     expect(1.satoshi_usdt).to be_instance_of Usdt
   end
+
+  it 'responds to Nem methods' do
+    expect(1.nem).to be_instance_of Nem
+    expect(1.micro_nem).to be_instance_of Nem
+  end  
 end

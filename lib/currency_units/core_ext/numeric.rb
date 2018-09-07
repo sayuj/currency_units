@@ -181,4 +181,15 @@ class Numeric
   def satoshi_usdt
     Usdt.new(self, :sat)
   end
+
+  # Nem
+
+  def nem
+    Nem.new(self. :xem)
+  end
+
+  def micro_nem
+    Nem.new(self, :micro_xem)
+  end
+
 end
