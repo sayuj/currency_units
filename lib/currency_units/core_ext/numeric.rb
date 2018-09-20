@@ -185,11 +185,23 @@ class Numeric
   # Nem
 
   def nem
-    Nem.new(self. :xem)
+    Nem.new(self, :xem)
   end
 
   def micro_nem
     Nem.new(self, :micro_xem)
   end
 
+  #Lumen by Stellar Network
+  def xlm
+    Lumen.new(self, :xlm)
+  end
+
+  def stroop
+    Lumen.new(self, :stroop)
+  end
+
+  def lumen
+    Lumen.new(self)
+  end
 end
