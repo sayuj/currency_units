@@ -97,5 +97,11 @@ describe Numeric do
   it 'responds to Nem methods' do
     expect(1.nem).to be_instance_of Nem
     expect(1.micro_nem).to be_instance_of Nem
-  end  
+  end
+
+  it 'responds to lumen methods' do
+    expect(1.xlm).to be_instance_of Lumen
+    expect(1.stroop).to be_instance_of Lumen
+    expect(1.lumen).to be_instance_of Lumen
+  end    
 end
