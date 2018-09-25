@@ -38,7 +38,7 @@ class Lumen
   end
 
   def coin_to_smallest
-    @unit ||= :xrp
+    @unit ||= :xlm
     @stroop = convert_to_stroop
     to_smallest
   end
