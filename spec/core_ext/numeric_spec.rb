@@ -103,5 +103,10 @@ describe Numeric do
     expect(1.xlm).to be_instance_of Lumen
     expect(1.stroop).to be_instance_of Lumen
     expect(1.lumen).to be_instance_of Lumen
-  end    
+  end
+  
+  it 'responds to bitcoinsv methods' do
+    expect(1.bsv).to be_instance_of Bitcoinsv
+    expect(1.bitcoinsv).to be_instance_of Bitcoinsv
+  end
 end

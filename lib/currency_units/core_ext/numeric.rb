@@ -204,4 +204,13 @@ class Numeric
   def lumen
     Lumen.new(self)
   end
+
+  #Bitcoin Satoshi Vision  
+  def bsv
+    Bitcoinsv.new(self, :bsv)
+  end
+
+  def bitcoinsv
+    Bitcoinsv.new(self)
+  end
 end
