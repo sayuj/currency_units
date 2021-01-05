@@ -1,6 +1,6 @@
 require 'bigdecimal/util'
 
-class BitcoinCash
+class BitcoinGold
   def initialize(value, unit = nil)
     @value = value.to_d
     @unit = unit
@@ -9,7 +9,7 @@ class BitcoinCash
 
   def convert_to_satoshi
     case @unit
-      when :bch
+      when :btg
         @value * 100000000
       when :bit
         @value * 100
@@ -24,10 +24,10 @@ class BitcoinCash
     @satoshi / 100.0
   end
 
-  def to_bch
+  def to_btg
     @satoshi / 100000000.0
   end
-  alias to_coin to_bch
+  alias to_coin to_btg
 
   def to_satoshi
     @satoshi
@@ -41,7 +41,7 @@ class BitcoinCash
   end
 
   def coin_to_smallest
-    @unit ||= :bch
+    @unit ||= :btg
     @satoshi = convert_to_satoshi
     to_smallest
   end

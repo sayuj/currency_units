@@ -1,7 +1,6 @@
-# Ripple
 require 'bigdecimal/util'
 
-class Ripple
+class Waves
   def initialize(value, unit = nil)
     @value = value.to_d
     @unit = unit
@@ -10,36 +9,34 @@ class Ripple
 
   def convert_to_drop
     case @unit
-    when :xrp
-      @value * 1_000_000
-    when :drop
-      @value
-    else
-      @value
+      when :waves
+        @value * (10 ** 8)
+      when :drop
+        @value
+      else
+        @value
     end
   end
 
-  def to_xrp
-    @drop / 1_000_000.0
+  def to_waves
+    @drop / (10.0 ** 8)
   end
-  alias to_coin to_xrp
+  alias to_coin to_waves
 
   def to_drop
     @drop
   end
 
-  def to_smallest
-    to_drop
-  end
+  alias to_smallest to_drop
 
   def smallest_to_coin
-    @unit ||= :drop
+    @unit ||= :waves
     @drop = @value
     to_coin
   end
 
   def coin_to_smallest
-    @unit ||= :xrp
+    @unit ||= :waves
     @drop = convert_to_drop
     to_smallest
   end

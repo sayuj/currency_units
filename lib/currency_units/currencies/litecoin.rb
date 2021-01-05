@@ -1,6 +1,8 @@
+require 'bigdecimal/util'
+
 class Litecoin
   def initialize(value, unit = nil)
-    @value = value
+    @value = value.to_d
     @unit = unit
     @litoshi = convert_to_litoshi if @unit
   end

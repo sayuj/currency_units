@@ -76,4 +76,141 @@ class Numeric
   def bitcoin_cash
     BitcoinCash.new(self)
   end
+
+  def dash
+    Dash.new(self, :dash)
+  end
+
+  def duff
+    Dash.new(self, :duff)
+  end
+
+  # Digibyte units
+  def digibyte
+    Digibyte.new(self)
+  end
+
+  def dgb
+    Digibyte.new(self, :dgb)
+  end
+
+  #Zcash
+  def zcash
+    Zcash.new(self)
+  end
+
+  def zec
+    Zcash.new(self, :zec)
+  end
+
+  def zat
+    Zcash.new(self, :zat)
+  end
+
+  #Monero
+  def monero
+    Monero.new(self)
+  end
+
+  def xmr
+    Monero.new(self, :xmr)
+  end
+
+  def bit_xmr
+    Monero.new(self, :bit_xmr)
+  end
+
+  #BitcoinGold
+  def btg
+    BitcoinGold.new(self, :btg)
+  end
+
+  def bitcoin_gold
+    BitcoinGold.new(self)
+  end
+
+  def qtum
+    Qtum.new(self)
+  end
+
+  def bat
+    BasicAttentionToken.new(self, :bat)
+  end
+
+  def wei_bat
+    BasicAttentionToken.new(self, :bit_bat)
+  end
+
+  def basic_attention_token
+    BasicAttentionToken.new(self, :bat)
+  end
+
+  def dai
+    Dai.new(self, :dai)
+  end
+
+  def wei_dai
+    Dai.new(self, :wei_dai)
+  end
+
+  def waves
+    Waves.new(self, :waves)
+  end
+
+  def waves_drop
+    Waves.new(self, :drop)
+  end
+
+  def true_usd
+    TrueUsd.new(self, :tusd)
+  end
+
+  def tusd
+    TrueUsd.new(self, :tusd)
+  end
+
+  def wei_tusd
+    TrueUsd.new(self, :wei_tusd)
+  end
+
+  # Usdt
+  def usdt
+    Usdt.new(self, :usdt)
+  end
+
+  def satoshi_usdt
+    Usdt.new(self, :sat)
+  end
+
+  # Nem
+
+  def nem
+    Nem.new(self, :xem)
+  end
+
+  def micro_nem
+    Nem.new(self, :micro_xem)
+  end
+
+  #Lumen by Stellar Network
+  def xlm
+    Lumen.new(self, :xlm)
+  end
+
+  def stroop
+    Lumen.new(self, :stroop)
+  end
+
+  def lumen
+    Lumen.new(self)
+  end
+
+  #Bitcoin Satoshi Vision  
+  def bsv
+    Bitcoinsv.new(self, :bsv)
+  end
+
+  def bitcoinsv
+    Bitcoinsv.new(self)
+  end
 end
